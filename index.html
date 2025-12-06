@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Currículo - Anderson Nunes</title>
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #eef1f5;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 50px;
+        border-radius: 16px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    header p {
+        font-size: 1.15rem;
+        color: #555;
+    }
+
+    /* Redes */
+    .social {
+        margin-top: 15px;
+    }
+
+    .social a {
+        margin: 0 10px;
+        font-size: 1.4rem;
+        color: #2c3e50;
+        transition: 0.2s;
+    }
+    .social a:hover {
+        color: #007bff;
+    }
+
+    /* Seções */
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: #2c3e50;
+        border-left: 6px solid #007bff;
+        padding-left: 12px;
+        font-weight: 600;
+    }
+
+    /* Informações */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 30px;
+        font-size: 1rem;
+    }
+    @media(max-width: 700px) {
+        .info-grid { grid-template-columns: 1fr; }
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #007bff;
+        margin-right: 6px;
+    }
+
+    /* Habilidades */
+    .skills-list li {
+        margin-bottom: 8px;
+    }
+    .skills-list i {
+        color: #007bff;
+        margin-right: 8px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #777;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Anderson Nunes</h1>
+        <p>Desenvolvedor Backend • Python • Java • SQL • APIs</p>
+
+        <div class="social">
+            <a href="https://github.com/andersonasnunes" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ander_snunes@" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contato -->
+    <div class="section">
+        <div class="section-title">Informações de Contato</div>
+        <div class="info-grid">
+            <div><span class="highlight"><i class="fa-solid fa-location-dot"></i></span> Ubatuba - SP</div>
+            <div><span class="highlight"><i class="fa-solid fa-phone"></i></span> (12) 99655-6410</div>
+            <div><span class="highlight"><i class="fa-solid fa-envelope"></i></span> ander_snunes@</div>
+            <div><span class="highlight"><i class="fa-brands fa-github"></i></span> github.com/andersonasnunes</div>
+        </div>
+    </div>
+
+    <!-- Perfil -->
+    <div class="section">
+        <div class="section-title">Perfil Profissional</div>
+        <p>
+            Desenvolvedor backend com foco em Python, automações, integrações,
+            criação de APIs e bancos de dados. Experiência com boas práticas,
+            versionamento, ambientes Dockerizados e construção de soluções escaláveis.
+        </p>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="section">
+        <div class="section-title">Habilidades Técnicas</div>
+        <ul class="skills-list">
+            <li><i class="fa-solid fa-code"></i><strong>Linguagens:</strong> Python, Java, JavaScript</li>
+            <li><i class="fa-solid fa-server"></i><strong>Backend:</strong> APIs REST, Flask, FastAPI</li>
+            <li><i class="fa-solid fa-database"></i><strong>Bancos de Dados:</strong> MySQL, PostgreSQL, SQLite</li>
+            <li><i class="fa-solid fa-cloud"></i><strong>DevOps/Cloud:</strong> Docker, GitHub Actions</li>
+            <li><i class="fa-solid fa-code-branch"></i><strong>Versionamento:</strong> Git, GitHub</li>
+        </ul>
+    </div>
+
+    <!-- Experiência -->
+    <div class="section">
+        <div class="section-title">Experiência</div>
+        <p><strong>Projetos no GitHub:</strong> Desenvolvimento de ferramentas, automações, análises de dados e pacotes Python.</p>
+        <p><strong>Projetos pessoais:</strong> Criação de APIs, scripts backend, bots, processamento de imagens e aplicações web.</p>
+    </div>
+
+    <!-- Formação -->
+    <div class="section">
+        <div class="section-title">Formação</div>
+        <p><strong>Cursos e bootcamps</strong> voltados para desenvolvimento backend, Python, SQL e arquitetura de software.</p>
+    </div>
+
+    <div class="footer">© 2025 — Criado por Anderson Nunes</div>
+
+</div>
+</body>
+</html>
