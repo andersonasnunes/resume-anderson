@@ -3,253 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anderson – Desenvolvedor</title>
+<title>Anderson Nunes – Desenvolvedor Backend</title>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-    body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background: #f2f4f8;
-        color: #333;
-        scroll-behavior: smooth;
+    :root {
+        --primary: #4c8bff;
+        --secondary: #1e1f26;
+        --card-bg: rgba(255, 255, 255, 0.16);
+        --glass-bg: rgba(255, 255, 255, 0.08);
+        --text-light: #f1f1f1;
+        --shadow: 0 8px 32px rgba(0,0,0,0.2);
     }
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0a0d1a, #1a1f33 60%, #0f1629);
+        color: var(--text-light);
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
     header {
-        background: linear-gradient(135deg, #007bff, #005fcc);
-        padding: 80px 20px;
-        color: white;
+        padding: 110px 20px 80px;
         text-align: center;
+        position: relative;
     }
 
     header h1 {
         font-size: 3rem;
-        margin-bottom: 10px;
-        animation: fadeIn 1.2s ease-in-out;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 0 8px var(--primary);
+        animation: fadeDown 1.4s ease-out;
     }
 
     header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
+        font-size: 1.3rem;
+        margin-top: 12px;
+        opacity: .8;
+        animation: fadeDown 1.6s ease-out;
     }
 
+    /* NAV */
     nav {
-        background: white;
-        padding: 15px 0;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         position: sticky;
         top: 0;
+        background: rgba(15, 18, 34, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
         z-index: 10;
+        box-shadow: var(--shadow);
     }
 
     nav a {
-        margin: 0 20px;
-        color: #333;
-        font-weight: 600;
+        color: var(--text-light);
         text-decoration: none;
-        transition: 0.2s;
+        font-weight: 600;
+        transition: .3s;
+        padding: 6px 12px;
+        border-radius: 6px;
     }
 
     nav a:hover {
-        color: #007bff;
+        background: var(--primary);
+        color: #fff;
+        box-shadow: 0 0 12px var(--primary);
     }
 
+    /* SEÇÕES */
     section {
-        padding: 70px 20px;
-        max-width: 1000px;
+        padding: 80px 20px;
+        max-width: 1100px;
         margin: auto;
-    }
-
-    .title {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 30px;
-        color: #005fcc;
-    }
-
-    /* Sobre */
-    #sobre p {
-        font-size: 1.2rem;
-        text-align: center;
-        line-height: 1.6;
-    }
-
-    /* Habilidades */
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-
-    .skill-card {
-        background: white;
-        padding: 25px;
-        text-align: center;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        transition: 0.3s;
-    }
-
-    .skill-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    }
-
-    .skill-card i {
-        font-size: 2.5rem;
-        color: #007bff;
-        margin-bottom: 10px;
-    }
-
-    /* Projetos */
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 25px;
-    }
-
-    .project-card {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        transition: 0.3s;
-    }
-
-    .project-card:hover {
-        transform: translateY(-6px);
-    }
-
-    .project-card h3 {
-        margin-bottom: 10px;
-        color: #005fcc;
-    }
-
-    /* Contato */
-    .contact-info {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .contact-info i {
-        color: #005fcc;
-        margin-right: 10px;
-    }
-
-    /* Footer */
-    footer {
-        margin-top: 50px;
-        background: #005fcc;
-        padding: 20px;
-        text-align: center;
-        color: white;
-    }
-
-    /* Animações */
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-</style>
-</head>
-<body>
-
-<!-- Header -->
-<header>
-    <h1>Anderson Nunes</h1>
-    <p>Desenvolvedor Backend • Python • Java • APIs • SQL</p>
-</header>
-
-<!-- Menu -->
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-</nav>
-
-<!-- Sobre -->
-<section id="sobre">
-    <h2 class="title">Sobre Mim</h2>
-    <p>
-        Sou desenvolvedor backend com foco em Python, APIs, bancos de dados e soluções escaláveis.
-        Tenho experiência em automações, integrações e construção de sistemas modernos.
-    </p>
-</section>
-
-<!-- Habilidades -->
-<section id="habilidades">
-    <h2 class="title">Habilidades</h2>
-
-    <div class="skills">
-        <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <h3>Python</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <h3>SQL</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
-            <h3>Java</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-server"></i>
-            <h3>APIs REST</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <h3>Git & GitHub</h3>
-        </div>
-    </div>
-</section>
-
-<!-- Projetos -->
-<section id="projetos">
-    <h2 class="title">Projetos</h2>
-
-    <div class="projects">
-
-        <div class="project-card">
-            <h3>Pacote de Processamento de Imagens</h3>
-            <p>Ferramenta em Python para manipulação e análise de imagens. Inclui filtros, resize e detecção de bordas.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>API de Cadastro</h3>
-            <p>API moderna em FastAPI com autenticação JWT, rota CRUD e conexão com banco de dados.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Dashboard de Estudos</h3>
-            <p>Dashboard interativo para acompanhar metas de estudo, usando JavaScript e gráficos dinâmicos.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- Contato -->
-<section id="contato">
-    <h2 class="title">Contato</h2>
-
-    <div class="contact-info">
-        <p><i class="fa-solid fa-envelope"></i> ander_snunes@</p>
-        <p><i class="fa-solid fa-phone"></i> (12) 99655-6410</p>
-        <p><i class="fa-brands fa-github"></i> github.com/andersonasnunes</p>
-    </div>
-</section>
-
-<footer>
-    © 2025 — Anderson Nunes
-</footer>
-
-</body>
-</html>
+        animation: fadeUp 1.2s
