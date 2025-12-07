@@ -100,12 +100,21 @@
 
     /* SOBRE */
     #sobre p {
-        text-align: center;
+        text-align: justify;
+        font-size: 1.3rem;
+        opacity: .9;
+        line-height: 1.7;
+    }
+    
+    /* EXPERIÊNCIA */
+    #experiencia p {
+        text-align: justify;
         font-size: 1.3rem;
         opacity: .9;
         line-height: 1.7;
     }
 
+    
     /* SKILLS */
     .skills {
         display: grid;
@@ -146,6 +155,7 @@
 
     .project-card {
         background: var(--glass-bg);
+        text-align: justify
         border-radius: 16px;
         padding: 25px;
         box-shadow: var(--shadow);
@@ -205,12 +215,12 @@
 
 <header>
     <h1>Anderson Nunes</h1>
-    <p>Desenvolvedor em formação</p>
-    <p>• Python • Java • APIs • SQL • IA Generativa •</p>
+    <p>Estudante de Engenharia de Software</p>
 </header>
 
 <nav>
     <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
     <a href="#habilidades">Habilidades</a>
     <a href="#projetos">Projetos</a>
     <a href="#contato">Contato</a>
@@ -219,15 +229,23 @@
 <section id="sobre">
     <h2 class="title">Sobre Mim</h2>
     <p>
-        
         Sou um profissional em transição de carreira: comecei minha jornada como professor, apaixonado por ensinar, aprender e resolver problemas complexos de forma simples. 
         Com o tempo, percebi que minha curiosidade por tecnologia e lógica poderia me levar ainda mais longe e foi assim que iniciei minha trajetória na programação.
         Estou cursando o segundo semestre de Engenharia de Software.
-        Desenvolvedor Backend em formação com foco em Python, APIs, SQL e automações.
+        Desenvolvedor Backend em formação com foco em Python, APIs, SQL, IA e automações.
         Aprofudando meus conhecimentos em bancos de dados e soluções escaláveis para empresas.
         Buscando sempre aprender e construir sistemas modernos e eficientes.
     </p>
 </section>
+
+<section id="experiencia">
+    <h2 class="title">Experiência</h2>
+    <p>
+        Minha trajetória profissional foi iniciada em 2004 atuando com suporte técnico, manutenção de hardware e configuração de servidores Linux. 
+        Desde então percorri por diversos caminhos mas sempre usando a tecnologia como suporte para minhas escolhas profissionais. 
+        Desde 2021, atuo na área da educação, ministrando aulas teóricas e práticas em Tecnologia, Biologia e Química, criando materiais didáticos aplicando metodologias ativas com apoio de ferramentas digitais. 
+        Além disso, faço parte do Projeto de Apoio à Tecnologia da Informação do Governo do Estado de São Paulo, realizando capacitações, suporte técnico e atividades pedagógicas voltadas ao uso eficiente de recursos digitais nas escolas.
+    </p>
 
 <section id="habilidades">
     <h2 class="title">Habilidades</h2>
@@ -242,8 +260,8 @@
             <h3>SQL</h3>
         </div>
         <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
-            <h3>Java</h3>
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
         </div>
         <div class="skill-card">
             <i class="fa-solid fa-server"></i>
@@ -267,8 +285,9 @@
     <div class="projects">
 
         <div class="project-card">
-            <h3>Pacote de Processamento de Imagens</h3>
-            <p>Ferramenta em Python para manipulação e análise de imagens: filtros, resize, bordas e muito mais.</p>
+            <h3>Sitema Bancário</h3>
+            <p>Sistema bancário em Python utilizando Programação Orientada a Objetos, com abstração, herança, polimorfismo, encapsulamento e iteradores. 
+            Ele permite cadastrar clientes e contas, realizar depósitos, saques e gerar extratos pelo terminal.</p>
         </div>
 
         <div class="project-card">
