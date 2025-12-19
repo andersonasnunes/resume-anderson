@@ -48,4 +48,5 @@ Ele inclui:
 
 ---
 
+<a href="https://andersonasnunes.github.io/resume-anderson/" target="_blank">Ver meu currículo</a>
 
